@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jasmine Spec Runner </title>
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.3.4/jasmine_favicon.png">
+    <link rel="stylesheet" href="lib/jasmine-2.3.4/jasmine.css">
+    <!-- Jasmine core and HTML -->
+
+    <script type="text/javascript" src="lib/jasmine-2.3.4/jasmine.js"></script>
+    <script type="text/javascript" src="lib/jasmine-2.3.4/jasmine-html.js"></script>
+    <script type="text/javascript" src="lib/jasmine-2.3.4/jasmine.async.js"></script>
+    <script src="lib/jasmine-2.3.4/boot.js"></script>
+    <!-- JavaScript libraries on which source depends -->
+
+    <script type="text/javascript" src="lib/Angular/angular.js"></script>
+    <script type="text/javascript" src="lib/Angular/angular-mocks.js"></script>
+    <script type="text/javascript" src="lib/Angular/angular-resource.js"></script>
+
+    <!-- Script source to test and other files on which source depends -->
+    <script type="text/javascript" src="Scripts/app.js"></script>
+
+    <!-- include spec files here... -->
+    <script type="text/javascript" src="Scripts/NumCalculatorSpec.js"></script>
+
+</head>
+
+<body>
+    <script type="text/javascript">
+     jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+     jasmine.getEnv().execute();
+    </script>
+</body>
+</html>
+
